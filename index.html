@@ -3,22 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hex</title>
+    <title>hex - a really fast hex checker</title>
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body ng-controller='HexCtrl' ng-style="{'background-color': '#'+$scope.hex}">
+<body ng-controller='HexCtrl' ng-style="{'background-color': '#'+hex}">
     <div class="outer main">
         <div class="inner">
-            <p>
+            <p ng-style='{color: newHeaderColor}'>
                 hex - a really fast hex checker
             </p>
             <br>
-            <input type="text" ng-model='$scope.hex' placeholder="no need for #">
+            <input type="text" ng-model='hex' placeholder="no need for #" ng-style="{color: newMainColor, 'border-color': newMainColor}">
         </div>
     </div>
-    <div class="footer outer"><div class="inner">built by <a href="http://twitter.com/hcjk_">hcjk_</a></div></div>
+    <div class="footer outer">
+        <div class="inner" ng-style='{color: newHeaderColor}'>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hcjk.co/hex" data-via="hcjk_">Tweet</a>
+            <script>
+                ! function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + '://platform.twitter.com/widgets.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'twitter-wjs');
+            </script>
+            <br>built by <a href="http://twitter.com/hcjk_">hcjk_</a>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
     <script src="js/index.js"></script>
 </body>

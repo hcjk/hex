@@ -1,0 +1,1 @@
+var app=angular.module("app",[]);app.controller("HexCtrl",["$scope",function(a){a.hex="#ecf0f1",("#aaa"===a.hex||"#333"===a.hex)&&console.log("thes are bad colors")}]);

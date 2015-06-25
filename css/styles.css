@@ -11,14 +11,16 @@ body {
     background-color: #fff;
     transition: background 1s;
 }
+
 .main {
-    height: 90%;
+    height: 80%;
     width: 100%;
 }
+
 .footer {
-    height: 10%;
     width: 100%;
 }
+
 .outer {
     display: table;
     text-align: center;
@@ -30,6 +32,7 @@ body {
 }
 
 p {
+    transition: color 1s;
     color: #333;
 }
 
@@ -43,6 +46,8 @@ input {
     border-width: thin;
     color: #aaa;
     background-color: transparent;
+    transition-property: color, border;
+    transition-duration: 1s;
 }
 
 input:focus {
