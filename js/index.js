@@ -15,7 +15,7 @@ app.controller('HexCtrl', ['$scope', function ($scope) {
 
         var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
 
-        if (luma < 40 || newVal === 'aaa' || newVal === 'bbb'|| newVal === 'ccc'|| newVal === '111'|| newVal === '222'|| newVal === '333' || newVal === '444' || newVal === '555' || newVal === '666' || newVal === '777' || newVal === '888' || newVal === '999'  || newVal === '000') {
+        if (luma < 40) {
             $scope.newHeaderColor = '#fff';
             $scope.newMainColor = '#ecf0f1';
         } else {
