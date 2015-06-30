@@ -14,7 +14,7 @@ app.controller('HexCtrl', ['$scope', function ($scope) {
         var b = (rgb >>  0) & 0xff;  // extract blue
 
         var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-        if (luma < 40) {
+        if (luma < 50) {
             $scope.newHeaderColor = '#fff';
             $scope.newMainColor = '#ecf0f1';
         } 
