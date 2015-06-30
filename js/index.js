@@ -14,11 +14,15 @@ app.controller('HexCtrl', ['$scope', function ($scope) {
         var b = (rgb >>  0) & 0xff;  // extract blue
 
         var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-        console.log(luma);
         if (luma < 40) {
             $scope.newHeaderColor = '#fff';
             $scope.newMainColor = '#ecf0f1';
-        } else {
+        } 
+        else if (newVal == 'fff'){
+            $scope.newHeaderColor = '';
+            $scope.newMainColor = '';
+        }
+        else {
             $scope.newHeaderColor = '';
             $scope.newMainColor = '';
         }
