@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body ng-controller='HexCtrl' ng-style="{'background-color': '#'+hex}">
+<body ng-controller='HexCtrl' ng-style="{'background-color': hex}">
     <div class="outer main">
         <div class="inner">
             <p ng-style='{color: newHeaderColor}'>
                 hex - a really fast hex checker
             </p>
             <br>
-            <input type="text" ng-model='hex' placeholder="no need for #" ng-style="{color: newMainColor, 'border-color': newMainColor}" autofocus>
+            <input type="text" ng-model='hex' placeholder="Enter a color!" ng-style="{color: newMainColor, 'border-color': newMainColor}" autofocus>
         </div>
     </div>
     <div class="footer outer">
